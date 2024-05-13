@@ -144,6 +144,7 @@
     <revprop action="flag" color="red" val="review-q"/>
     <revprop action="flag" color="red" val="review-r"/>
     <revprop action="flag" color="red" val="review-s"/>
+    <revprop action="include" val="review-a-2024"/>
     <!--  <revprop action="flag" color="red" val="2.0"/>-->
 
 </val>
