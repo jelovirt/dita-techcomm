@@ -17,15 +17,6 @@
       <title>Usage information</title>
       <p>The <xmlelement>glossSynonym</xmlelement> element should not be used to specify an acronym;
         use the <xmlelement>glossAcronym</xmlelement> element for that purpose.</p>
-      <draft-comment author="Kristen James Eberlein" time="24 March 2024">
-        <p>Eliot Kimber made the following comment in the (1st) Content Fusion review:</p>
-        <p>"I think this element is the answer to Dawn's question about
-            <xmlelement>glossAlternateFor</xmlelement>not applying to the entire glossary
-          definition. This element serves that role and, because it allows both
-            <xmlelement>term</xmlelement> and <xmlelement>keyword</xmlelement>, can be a link to the
-          glossary entry of the synonym term.</p>
-        <p>Do we want to provide an example of this?</p>
-      </draft-comment>
     </section>
       <section id="specialization-hierarchy">
          <title>Specialization hierarchy</title>
@@ -35,15 +26,17 @@
       <section conkeyref="reuse-title/attributes" id="attributes"/>
       <example id="example" otherprops="examples">
          <title>Example</title>
-      <p>The following code sample shows how the <xmlelement>glossSynonym</xmlelement> element can
-        be used to identify a synonym for the word automobile:</p>
+      <p rev="review-a-2024">The following code sample shows how the
+          <xmlelement>glossSynonym</xmlelement> element can be used to identify a synonym for the
+        word automobile. In this case the synonym is enclosed in a term with
+        <xmlatt>keyref</xmlatt>, allowing a tool to optionally link to the other definition:</p>
       <codeblock>&lt;glossentry id="automobile">
     &lt;glossterm>Automobile&lt;/glossterm>
     &lt;glossdef>A road vehicle, typically with four wheels, powered by an
     internal combustion engine or an electric motor.&lt;/glossdef>
   &lt;glossBody>
     &lt;glossAlt>
-      <b>&lt;glossSynonym>car&lt;/glossSynonym></b>
+      <b rev="review-a-2024">&lt;glossSynonym>&lt;term keyref="gloss.car">car&lt;/term>&lt;/glossSynonym></b>
     &lt;/glossAlt>
   &lt;/glossBody>
 &lt;/glossentry></codeblock>

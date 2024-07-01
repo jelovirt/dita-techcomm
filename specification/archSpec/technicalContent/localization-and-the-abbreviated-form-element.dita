@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="localization-and-the-abbreviated-form-element">
-    <title>Localization and the<xmlelement>abbreviated-form</xmlelement> element</title>
+    <title rev="review-a-2024">Localization and the <xmlelement>abbreviated-form</xmlelement>
+        element</title>
     <shortdesc>Implementations that choose to use the <xmlelement>abbreviated-form</xmlelement> need
         to consider the effect on translation.</shortdesc>
     <conbody>
